@@ -1,0 +1,103 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.yql.dr.demo.MainActivity" >
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/background_blue_bg">
+        <RelativeLayout android:id="@+id/back_btn"
+            android:layout_width="50dp"
+            android:layout_height="48dp">
+            <ImageView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/backbg"
+                android:contentDescription="@string/app_name"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/font_splash"
+            android:text="联盟任务"
+            android:layout_centerInParent="true"/>
+        
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <Button
+                android:id="@+id/dr_offer"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/dianru_btn_bg"
+                android:text="点入积分墙" />
+
+            <Button
+                android:id="@+id/dl_offer"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/dianru_btn_bg"
+                android:text="点乐积分墙" />
+
+            <Button
+                android:id="@+id/dm_offer"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/dianru_btn_bg"
+                android:text="多盟积分墙" />
+
+            <Button
+                android:id="@+id/md_offer"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/dianru_btn_bg"
+                android:text="米迪积分墙" />
+            <Button
+                android:id="@+id/wp_offer"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/dianru_btn_bg"
+                android:text="万普积分墙" />
+            <Button
+                android:id="@+id/ym_offer"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/dianru_btn_bg"
+                android:text="有米积分墙" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

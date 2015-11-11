@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_channel_bg"
+    android:orientation="vertical"
+    tools:context="com.yql.dr.demo.MainActivity" >
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/background_blue_bg" >
+
+        <RelativeLayout
+            android:id="@+id/back_btn"
+            android:layout_width="50dp"
+            android:layout_height="48dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/backbg"
+                android:contentDescription="@string/app_name" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="联盟任务"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/font_top_middle"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/background_channel_bottom"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/home_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="100金币=1元"
+            android:textColor="@color/background_navigation_blue"
+            android:textSize="@dimen/font_top_middle" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="20dp"
+            android:paddingBottom="10dp"
+            android:text="@string/home_bottom_detail"
+            android:textColor="@color/channel_bottom"
+            android:textSize="@dimen/font_slidebar" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottom"
+        android:layout_below="@id/top" >
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_channel_bg"
+        android:visibility="visible"
+        android:layout_below="@id/top" >
+
+        <ImageView
+            android:id="@+id/empty_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="-20dp"
+            android:background="@drawable/icons"
+            android:contentDescription="@string/app_name" />
+        <TextView android:id="@+id/empty_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/empty_iv"
+            android:text="加载失败，请稍后再试"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/channel_bottom"
+            android:textSize="@dimen/font_splash_bottom"/>
+    </RelativeLayout>
+
+</RelativeLayout>

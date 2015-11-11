@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!-- 通用颜色 -->
+    <color name="background_navigation_red">#00182b</color>
+    <color name="background_navigation_blue">#15aaf7</color>
+    <color name="background_navigation">#f5faf4</color>
+    <color name="background_blue_bg">#15aaf7</color>
+    <color name="background_channel_bg">#f5fafd</color>
+    <color name="background_channel_bottom">#edf6fc</color>
+    <color name="text_white">#fff</color>
+    <color name="text_useid_color">#c9edff</color>
+    <color name="channel_bottom">#82919a</color>
+    <color name="avatar_stroke">#5cc4f9</color>
+    <color name="item_title_color">#3e4b51</color>
+    <color name="item_detail_color">#a5b1bf</color>
+
+</resources>

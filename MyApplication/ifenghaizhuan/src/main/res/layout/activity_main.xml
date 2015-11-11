@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_blue_bg"
+    tools:context="com.yql.dr.demo.MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical" >
+
+        <com.ifeng.zhuanpoints.widget.CircleImageView
+            android:id="@+id/avatar_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/main_icon_default" />
+
+        <TextView
+            android:id="@+id/nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/font_splash"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/nick_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/text_useid_color"
+            android:textSize="@dimen/font_splash"/>
+
+        <Button
+            android:id="@+id/official_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_bg"
+            android:text="点击进入官方任务"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/font_splash" />
+
+        <Button
+            android:id="@+id/main_business"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_bg"
+            android:text="点击进入合作任务"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/font_splash" />
+
+        <Button
+            android:id="@+id/splash_"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_bg"
+            android:visibility="gone"
+            android:text="领取奖励"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/font_splash" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="@string/app_business_name"
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/font_splash_bottom" />
+
+</RelativeLayout>

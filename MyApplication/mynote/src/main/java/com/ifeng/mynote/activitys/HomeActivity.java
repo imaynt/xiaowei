@@ -12,6 +12,7 @@ import android.view.MenuItem;
 import com.ifeng.mynote.BaseActivity;
 import com.ifeng.mynote.R;
 import com.ifeng.mynote.net.BaseRequest;
+import com.ifeng.mynote.utils.ToastUtils;
 
 import java.util.Map;
 
@@ -33,7 +34,7 @@ public class HomeActivity extends BaseActivity implements BaseRequest.PostRespon
             }
         });
         fab.setVisibility(View.GONE);
-        BaseRequest.post(request,"",this);
+        BaseRequest.post(request,"www.baidu.com",this);
     }
 
 
@@ -81,11 +82,11 @@ public class HomeActivity extends BaseActivity implements BaseRequest.PostRespon
 
     @Override
     public void success(String result) {
-
+        ToastUtils.show(this,"result");
     }
 
     @Override
     public void failed(String message) {
-
+        ToastUtils.show(this,"result"+message);
     }
 }
