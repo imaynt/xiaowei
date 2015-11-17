@@ -1,0 +1,34 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "3885CE1ADF4200F44AE17B1FFD221BDC36347B4A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "049ab005-15d9-164c-ba02-703ec264e533++8790" : {
+      "DVTSourceControlWorkingCopyRepositoryBranchesLocationKey" : "branches",
+      "DVTSourceControlWorkingCopyRepositoryTagsLocationKey" : "tags",
+      "DVTSourceControlWorkingCopyRepositoryPrimaryBranchLocationKey" : "trunk"
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "3885CE1ADF4200F44AE17B1FFD221BDC36347B4A" : 0,
+    "049ab005-15d9-164c-ba02-703ec264e533++8790" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "619F519A-DEF3-4B1C-9F61-335766738BA1",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "3885CE1ADF4200F44AE17B1FFD221BDC36347B4A" : "IfengHighZhuan\/",
+    "049ab005-15d9-164c-ba02-703ec264e533++8790" : "IfengHighZhuan\/IfengHighZhuan\/WPLib.framework\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "IfengHighZhuan",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "IfengHighZhuan.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/svn1.staff.ifeng.com\/svn\/CMClub",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "049ab005-15d9-164c-ba02-703ec264e533++8790"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/211.151.175.158:\/home\/public\/jifenqiang\/jifenqiang_ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3885CE1ADF4200F44AE17B1FFD221BDC36347B4A"
+    }
+  ]
+}
