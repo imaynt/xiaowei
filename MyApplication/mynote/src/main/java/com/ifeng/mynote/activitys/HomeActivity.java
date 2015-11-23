@@ -1,5 +1,6 @@
 package com.ifeng.mynote.activitys;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -34,7 +35,8 @@ public class HomeActivity extends BaseActivity implements BaseRequest.PostRespon
             }
         });
         fab.setVisibility(View.GONE);
-        BaseRequest.post(request,"www.baidu.com",this);
+        BaseRequest.post(request, "www.baidu.com", this);
+        startActivity(new Intent(HomeActivity.this,SlideActivity.class));
     }
 
 

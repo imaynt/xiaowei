@@ -3,6 +3,11 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/MyApplication.iml" filepath="$PROJECT_DIR$/MyApplication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ifenghaizhuan/ifenghaizhuan.iml" filepath="$PROJECT_DIR$/ifenghaizhuan/ifenghaizhuan.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mynote/mynote.iml" filepath="$PROJECT_DIR$/mynote/mynote.iml" />
+      <module fileurl="file://$PROJECT_DIR$/slideanddraglistview/slideanddraglistview.iml" filepath="$PROJECT_DIR$/slideanddraglistview/slideanddraglistview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/volley/volley.iml" filepath="$PROJECT_DIR$/volley/volley.iml" />
     </modules>
   </component>
 </project>
