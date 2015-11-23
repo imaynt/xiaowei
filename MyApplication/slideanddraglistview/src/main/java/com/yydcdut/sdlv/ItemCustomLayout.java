@@ -13,12 +13,15 @@ import android.widget.ImageView;
  */
 public class ItemCustomLayout extends FrameLayout {
     private ImageView mBGImage;
+
     public ItemCustomLayout(Context context) {
-        super(context,null);
+        this(context, null);
     }
+
     public ItemCustomLayout(Context context, AttributeSet attrs) {
-        super(context, attrs);
+        this(context, attrs, 0);
     }
+
     public ItemCustomLayout(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         mBGImage = new ImageView(context);

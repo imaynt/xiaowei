@@ -18,19 +18,23 @@ import java.util.List;
  * Created by liwei5 on 2015/11/23.
  */
 public class ItemBackGroundLayout extends ViewGroup {
-    /*背景颜色*/
+    /* 背景的颜色 */
     private ImageView mBGImage;
-    /*下一个View的距离*/
+    /* 下一个View的距离 */
     private int mMarginLeft = 0;
     private int mMarginRight = 0;
-    /*添加子View*/
+    /* 添加的子View */
     private List<View> mBtnViews;
+
+
     public ItemBackGroundLayout(Context context) {
-        super(context,null);
+        this(context, null);
     }
+
     public ItemBackGroundLayout(Context context, AttributeSet attrs) {
-        super(context, attrs);
+        this(context, attrs, 0);
     }
+
     public ItemBackGroundLayout(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         mBGImage = new ImageView(context);
