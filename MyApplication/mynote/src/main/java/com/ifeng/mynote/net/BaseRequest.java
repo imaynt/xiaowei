@@ -44,7 +44,38 @@ public class BaseRequest {
 		
 		requestQueue.add(request);
 	}
-	
+	public static void get(RequestQueue requestQueue,String url,final PostResponseListener listener)
+	{
+		StringRequest request = new StringRequest(Request.Method.GET, url, new Listener<String>() {
+
+			@Override
+			public void onResponse(String response) {
+				listener.success(response);
+			}
+
+		},new ErrorListener() {
+
+			@Override
+			public void onErrorResponse(VolleyError error) {
+				listener.failed(error.getMessage());
+			}
+		}){
+			@Override
+			protected Map<String, String> getParams() throws AuthFailureError {
+				if(null!=listener.setParams())
+					return listener.setParams();
+				return super.getParams();
+			}
+			@Override
+			public Map<String, String> getHeaders() throws AuthFailureError {
+				if(null!=listener.setHeader())
+					return listener.setHeader();
+				return super.getHeaders();
+			}
+		};
+
+		requestQueue.add(request);
+	}
 	public interface PostResponseListener
 	{
 		public Map<String, String> setParams();

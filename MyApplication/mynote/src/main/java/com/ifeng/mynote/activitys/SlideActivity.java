@@ -12,6 +12,7 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.ifeng.mynote.BaseActivity;
 import com.ifeng.mynote.R;
 import com.yydcdut.sdlv.Menu;
 import com.yydcdut.sdlv.MenuItem;
@@ -21,7 +22,7 @@ import java.util.List;
 /**
  * Created by liwei5 on 2015/11/23.
  */
-public class SlideActivity extends AppCompatActivity implements SlideAndDragListView.OnListItemLongClickListener,
+public class SlideActivity extends BaseActivity implements SlideAndDragListView.OnListItemLongClickListener,
         SlideAndDragListView.OnDragListener, SlideAndDragListView.OnSlideListener,
         SlideAndDragListView.OnListItemClickListener, SlideAndDragListView.OnMenuItemClickListener {
 

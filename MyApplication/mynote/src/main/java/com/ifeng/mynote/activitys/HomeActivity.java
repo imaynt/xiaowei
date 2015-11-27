@@ -6,6 +6,7 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -13,8 +14,10 @@ import android.view.MenuItem;
 import com.ifeng.mynote.BaseActivity;
 import com.ifeng.mynote.R;
 import com.ifeng.mynote.net.BaseRequest;
+import com.ifeng.mynote.utils.DeviceUtil;
 import com.ifeng.mynote.utils.ToastUtils;
 
+import java.util.HashMap;
 import java.util.Map;
 
 public class HomeActivity extends BaseActivity implements BaseRequest.PostResponseListener{
@@ -35,8 +38,10 @@ public class HomeActivity extends BaseActivity implements BaseRequest.PostRespon
             }
         });
         fab.setVisibility(View.GONE);
-        BaseRequest.post(request, "www.baidu.com", this);
-        startActivity(new Intent(HomeActivity.this,SlideActivity.class));
+//        BaseRequest.post(request, "http://211.151.175.158/himoney/api/interface.php?fun=getUserinfo", this);
+        startActivity(new Intent(HomeActivity.this, SlideActivity.class));
+        BaseRequest.get(request, "http://hbhs.sinaapp.com/getjson1/", this);
+
     }
 
 
@@ -79,12 +84,24 @@ public class HomeActivity extends BaseActivity implements BaseRequest.PostRespon
 
     @Override
     public Map<String, String> setParams() {
-        return null;
+        Map<String, String> map = new HashMap<String, String>();
+//        map.put("userid", "100029" );
+//        map.put("deviceid", "" + DeviceUtil.getDevice(this));
+//        map.put("platform", "" + android.os.Build.MODEL);
+//        map.put("oscode", "" + android.os.Build.VERSION.RELEASE);
+//        String signStr = "userid=100029" + "&deviceid="
+//                + DeviceUtil.getDevice(this) + "&platform="
+//                + android.os.Build.MODEL + "&oscode="
+//                + android.os.Build.VERSION.RELEASE + "||u9Y%)!a1z";
+//        map.put("sign", DeviceUtil.GetMD5Code(signStr));
+        map.put("page","1");
+        return map;
     }
 
     @Override
     public void success(String result) {
-        ToastUtils.show(this,"result");
+        Log.e("tag",""+result);
+        ToastUtils.show(this,"result"+result);
     }
 
     @Override
