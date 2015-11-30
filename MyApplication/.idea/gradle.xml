@@ -13,8 +13,11 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/ifenghaizhuan" />
             <option value="$PROJECT_DIR$/mynote" />
+            <option value="$PROJECT_DIR$/showcaseview" />
             <option value="$PROJECT_DIR$/slideanddraglistview" />
+            <option value="$PROJECT_DIR$/slidingmenu" />
             <option value="$PROJECT_DIR$/volley" />
+            <option value="$PROJECT_DIR$/weiciyuan" />
           </set>
         </option>
       </GradleProjectSettings>
