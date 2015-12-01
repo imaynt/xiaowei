@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/ifenghaizhuan/ifenghaizhuan.iml" filepath="$PROJECT_DIR$/ifenghaizhuan/ifenghaizhuan.iml" />
       <module fileurl="file://$PROJECT_DIR$/mynote/mynote.iml" filepath="$PROJECT_DIR$/mynote/mynote.iml" />
+      <module fileurl="file://$PROJECT_DIR$/note/note.iml" filepath="$PROJECT_DIR$/note/note.iml" />
       <module fileurl="file://$PROJECT_DIR$/showcaseview/showcaseview.iml" filepath="$PROJECT_DIR$/showcaseview/showcaseview.iml" />
       <module fileurl="file://$PROJECT_DIR$/slideanddraglistview/slideanddraglistview.iml" filepath="$PROJECT_DIR$/slideanddraglistview/slideanddraglistview.iml" />
       <module fileurl="file://$PROJECT_DIR$/slidingmenu/slidingmenu.iml" filepath="$PROJECT_DIR$/slidingmenu/slidingmenu.iml" />

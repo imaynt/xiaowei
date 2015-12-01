@@ -1,1 +1,1 @@
-include ':app', ':mynote', ':volley', ':ifenghaizhuan', ':slideanddraglistview', ':weiciyuan', ':showcaseview', ':slidingmenu'
+include ':app', ':mynote', ':volley', ':ifenghaizhuan', ':slideanddraglistview', ':weiciyuan', ':showcaseview', ':slidingmenu', ':note'
