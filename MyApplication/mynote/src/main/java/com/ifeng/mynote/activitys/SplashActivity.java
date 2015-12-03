@@ -12,6 +12,11 @@ import com.ifeng.mynote.R;
 import com.ifeng.mynote.net.BaseRequest;
 
 import java.util.Map;
+import java.util.concurrent.Executor;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
 
 public class SplashActivity extends BaseActivity implements BaseRequest.PostResponseListener {
 
@@ -30,8 +35,45 @@ public class SplashActivity extends BaseActivity implements BaseRequest.PostResp
                         .setAction("Action", null).show();
             }
         });
+//        initCachedThread();
+        initFixedThread();
     }
+    private void initCachedThread()
+    {
+        ExecutorService catchThreadPool = Executors.newCachedThreadPool();
+        catchThreadPool.execute(new Runnable() {
+            @Override
+            public void run() {
+                System.out.println("hahh");
+            }
+        });
+    }
+    private void initScheduledThread()
+    {
+        ScheduledExecutorService scheduledThreadPool = Executors.newScheduledThreadPool(3);
+        scheduledThreadPool.schedule(new Runnable() {
+            @Override
+            public void run() {
 
+            }
+        },3, TimeUnit.SECONDS);//表示延迟3秒执行
+        scheduledThreadPool.scheduleAtFixedRate(new Runnable() {
+            @Override
+            public void run() {
+
+            }
+        },1,3,TimeUnit.SECONDS);//表示1秒后每三秒执行一次。ScheduledExecutorService比Timer更安全，功能更强大，后面会有一篇单独进行对比。
+    }
+    private void initFixedThread()
+    {
+        ExecutorService fixedThreadPool = Executors.newFixedThreadPool(3);
+        fixedThreadPool.execute(new Runnable() {
+            @Override
+            public void run() {
+                System.out.println("fixthreadPool");
+            }
+        });
+    }
     @Override
     public Map<String, String> setParams() {
         return null;

@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/MyApplication.iml" filepath="$PROJECT_DIR$/MyApplication.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/autoscrollviewpager/autoscrollviewpager.iml" filepath="$PROJECT_DIR$/autoscrollviewpager/autoscrollviewpager.iml" />
       <module fileurl="file://$PROJECT_DIR$/ifenghaizhuan/ifenghaizhuan.iml" filepath="$PROJECT_DIR$/ifenghaizhuan/ifenghaizhuan.iml" />
       <module fileurl="file://$PROJECT_DIR$/justwetools/justwetools.iml" filepath="$PROJECT_DIR$/justwetools/justwetools.iml" />
       <module fileurl="file://$PROJECT_DIR$/mynote/mynote.iml" filepath="$PROJECT_DIR$/mynote/mynote.iml" />
