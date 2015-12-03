@@ -17,7 +17,8 @@ public class BaseActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        request = Volley.newRequestQueue(getApplicationContext());
+        request = BaseApplication.requestQueue;
+
         mImageLoader = new AsyImageLoader(BaseActivity.this);
     }
 }

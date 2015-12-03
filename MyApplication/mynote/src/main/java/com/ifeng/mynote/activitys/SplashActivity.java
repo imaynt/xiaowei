@@ -10,6 +10,7 @@ import android.view.View;
 import com.ifeng.mynote.BaseActivity;
 import com.ifeng.mynote.R;
 import com.ifeng.mynote.net.BaseRequest;
+import com.ifeng.mynote.utils.ToastUtils;
 
 import java.util.Map;
 import java.util.concurrent.Executor;
@@ -35,8 +36,9 @@ public class SplashActivity extends BaseActivity implements BaseRequest.PostResp
                         .setAction("Action", null).show();
             }
         });
+        BaseRequest.get(request, "http://hbhs.sinaapp.com/getjson1/", this);
 //        initCachedThread();
-        initFixedThread();
+//        initFixedThread();
     }
     private void initCachedThread()
     {
@@ -86,7 +88,7 @@ public class SplashActivity extends BaseActivity implements BaseRequest.PostResp
 
     @Override
     public void success(String result) {
-
+        ToastUtils.show(this, "result" + result);
     }
 
     @Override
