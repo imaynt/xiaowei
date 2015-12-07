@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-include ':app', ':mynote', ':volley', ':ifenghaizhuan', ':slideanddraglistview', ':weiciyuan', ':showcaseview', ':slidingmenu', ':note', ':justwetools', ':autoscrollviewpager', ':javademo'
-=======
-include ':app', ':mynote', ':volley', ':ifenghaizhuan', ':slideanddraglistview', ':weiciyuan', ':showcaseview', ':slidingmenu', ':note', ':justwetools', ':autoscrollviewpager', ':lib'
->>>>>>> origin/master
+include ':app', ':mynote', ':volley', ':ifenghaizhuan', ':slideanddraglistview', ':weiciyuan', ':showcaseview', ':slidingmenu', ':note', ':justwetools', ':autoscrollviewpager', ':javademo',':lib'
