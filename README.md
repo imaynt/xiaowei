@@ -6,4 +6,8 @@ This is an Android tools index for Android developers
 https://github.com/huewu/PinterestLikeAdapterView
 
   新的工具
+  
+  
+ASbug  Error:Execution failed for task ':demo:packageRelease'.>
+http://blog.csdn.net/msn465780/article/details/49886755
 
