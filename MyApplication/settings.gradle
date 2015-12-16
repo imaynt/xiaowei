@@ -1,1 +1,1 @@
-include ':javademo', ':app', ':autoscrollviewpager', ':ifenghaizhuan', ':justwetools', ':lib', ':mynote', ':note', ':showcaseview', ':slideanddraglistview', ':slidingmenu', ':volley', ':weiciyuan'
+include ':javademo', ':app', ':autoscrollviewpager', ':ifenghaizhuan', ':justwetools', ':lib', ':mynote', ':note', ':showcaseview', ':slideanddraglistview', ':slidingmenu', ':volley', ':weiciyuan', ':recyclerview'
