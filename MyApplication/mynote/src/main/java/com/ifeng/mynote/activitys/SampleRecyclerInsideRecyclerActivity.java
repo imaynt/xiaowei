@@ -23,9 +23,9 @@ public class SampleRecyclerInsideRecyclerActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recycler_inside_recycler);
         ArrayList<String> mData = new ArrayList<String>();
-        for (int i=0;i<5;i++)++++
+        for (int i=0;i<5;i++)
         {
-            mData.add("item"+i);====++
+            mData.add("item"+i);
         }
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.tb);
