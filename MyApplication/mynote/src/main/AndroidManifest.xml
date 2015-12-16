@@ -67,6 +67,21 @@
             android:label="@string/title_activity_sample_recycler_inside_recycler"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
+        <activity
+            android:name=".activitys.SampleAdapterDemoActivity"
+            android:label="@string/title_activity_sample_recycler_inside_recycler"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".activitys.SampleGridActivity"
+            android:label="@string/title_activity_sample_recycler_inside_recycler"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".activitys.SampleActivity"
+            android:label="@string/title_activity_sample_recycler_inside_recycler"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
     </application>
 
 </manifest>

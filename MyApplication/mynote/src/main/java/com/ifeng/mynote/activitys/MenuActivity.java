@@ -93,12 +93,12 @@ public class MenuActivity extends BaseActivity {
                 ToastUtils.show(MenuActivity.this,"helllo");
                 if ("Recycler List Inside Recycler list".equals(o.toString())) {
                     startActivity(new Intent(MenuActivity.this, SampleRecyclerInsideRecyclerActivity.class));
-                } else if ("Yf List Recycler Adapter Demo".equals(o.toString())) {
-//                    startActivity(new Intent(MenuActivity.this, SampleAdapterDemoActivity.class));
-                } else if ("Yf List And Grid Demo".equals(o.toString())) {
-//                    startActivity(new Intent(MenuActivity.this, SampleGridActivity.class));
+                } else if ("Yf list Recycler Adapter Demo".equals(o.toString())) {
+                    startActivity(new Intent(MenuActivity.this, SampleAdapterDemoActivity.class));
+                } else if ("Yf list and Grid Demo".equals(o.toString())) {
+                    startActivity(new Intent(MenuActivity.this, SampleGridActivity.class));
                 } else {
-//                    startActivity(new Intent(MenuActivity.this, SampleActivity.class));
+                    startActivity(new Intent(MenuActivity.this, SampleActivity.class));
                 }
             }
         });
