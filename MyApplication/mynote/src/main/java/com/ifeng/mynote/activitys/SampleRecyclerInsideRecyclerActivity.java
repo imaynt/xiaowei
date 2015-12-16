@@ -10,13 +10,14 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 
 import com.freedom.xiaowei.recyclerview.YfListRecyclerView;
+import com.ifeng.mynote.BaseActivity;
 import com.ifeng.mynote.R;
 import com.ifeng.mynote.adapters.RcyInRcyOutAdapter;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
 
-public class SampleRecyclerInsideRecyclerActivity extends AppCompatActivity {
+public class SampleRecyclerInsideRecyclerActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
