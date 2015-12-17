@@ -6,7 +6,7 @@ package com.freedom.xiaowei.recyclerview.util;
  */
 public class LogUtil {
 
-    private static boolean sDebug = false;
+    private static boolean sDebug = true;
 
     public static void i(String tag, String msg) {
         if (sDebug) android.util.Log.i(tag, msg);

@@ -9,5 +9,15 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:showIn="@layout/activity_splash"
     tools:context="com.ifeng.mynote.activitys.SplashActivity">
+    <com.ifeng.mynote.widget.ExampleLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <com.ifeng.mynote.widget.ExampleView3
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="exampleview3"/>
+
+    </com.ifeng.mynote.widget.ExampleLinearLayout>
 
 </RelativeLayout>

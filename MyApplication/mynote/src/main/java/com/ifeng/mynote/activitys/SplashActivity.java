@@ -36,7 +36,8 @@ public class SplashActivity extends BaseActivity implements BaseRequest.PostResp
                         .setAction("Action", null).show();
             }
         });
-        BaseRequest.get(request, "http://hbhs.sinaapp.com/getjson1/", this);
+        fab.setVisibility(View.GONE);
+//        BaseRequest.get(request, "http://hbhs.sinaapp.com/getjson1/", this);
 //        initCachedThread();
 //        initFixedThread();
     }
