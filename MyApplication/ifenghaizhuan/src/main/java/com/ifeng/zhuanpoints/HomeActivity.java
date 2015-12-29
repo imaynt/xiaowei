@@ -245,8 +245,31 @@ public class HomeActivity extends BaseActivity implements OnClickListener,
 
 		default:
 			break;
-		}
 
+		}
+		RequestVolley.post(request, ContentUtil.Host + "fun=accessNotify",
+				new PostResponseListener(){
+
+					@Override
+					public Map<String, String> setParams() {
+						return null;
+					}
+
+					@Override
+					public Map<String, String> setHeader() {
+						return null;
+					}
+
+					@Override
+					public void success(String result) {
+
+					}
+
+					@Override
+					public void failed(String message) {
+
+					}
+				});
 	}
 
 	@Override
