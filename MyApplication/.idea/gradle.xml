@@ -11,7 +11,9 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/appcompat" />
             <option value="$PROJECT_DIR$/autoscrollviewpager" />
+            <option value="$PROJECT_DIR$/baidumap" />
             <option value="$PROJECT_DIR$/ifenghaizhuan" />
             <option value="$PROJECT_DIR$/javademo" />
             <option value="$PROJECT_DIR$/justwetools" />

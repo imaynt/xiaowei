@@ -31,6 +31,7 @@ import android.graphics.drawable.Drawable;
 import android.support.v4.app.Fragment;
 import android.text.TextPaint;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
@@ -100,6 +101,7 @@ public abstract class AbstractAppListAdapter<T extends ItemBean> extends BaseAda
     }
 
     public void setSavedMiddleLoadingViewPosition(int position) {
+        Log.e("AbstractAppListAdapter","setSavedMiddleLoadingViewPosition");
         savedCurrentMiddleLoadingViewPosition = position;
     }
 
@@ -140,8 +142,10 @@ public abstract class AbstractAppListAdapter<T extends ItemBean> extends BaseAda
         }
 
         listView.setRecyclerListener(new AbsListView.RecyclerListener() {
+
             @Override
             public void onMovedToScrapHeap(View view) {
+                Log.e("AbstractAppListAdapter","onMovedToScrapHeap");
                 Integer index = (Integer) view.getTag(R.string.listview_index_tag);
                 if (index == null) {
                     return;
@@ -217,6 +221,7 @@ public abstract class AbstractAppListAdapter<T extends ItemBean> extends BaseAda
 
     @Override
     public int getItemViewType(int position) {
+        Log.e("AbstractAppListAdapter","getItemViewType");
         if (position >= bean.size()) {
             return -1;
         }
@@ -252,12 +257,14 @@ public abstract class AbstractAppListAdapter<T extends ItemBean> extends BaseAda
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
+
         ViewHolder holder = null;
         PrefView prefView = null;
         int itemViewType = getItemViewType(position);
-
+        Log.e("AbstractAppListAdapter","getView"+itemViewType);
         if (convertView == null
                 || convertView.getTag(R.drawable.ic_launcher + itemViewType) == null) {
+
             View view = null;
             switch (itemViewType) {
                 case TYPE_SIMPLE:
@@ -323,6 +330,7 @@ public abstract class AbstractAppListAdapter<T extends ItemBean> extends BaseAda
     }
 
     private void bindOnTouchListener(ViewHolder holder) {
+        Log.e("AbstractAppListAdapter","bindOnTouchListener");
         holder.listview_root.setClickable(false);
         holder.username.setClickable(false);
         holder.time.setClickable(false);
@@ -338,6 +346,7 @@ public abstract class AbstractAppListAdapter<T extends ItemBean> extends BaseAda
     }
 
     private View initMiddleLayout(ViewGroup parent) {
+        Log.e("AbstractAppListAdapter","initMiddleLayout");
         View convertView;
         convertView = inflater
                 .inflate(R.layout.timeline_listview_item_middle_layout, parent, false);
@@ -346,6 +355,7 @@ public abstract class AbstractAppListAdapter<T extends ItemBean> extends BaseAda
     }
 
     private View initSimpleLayout(ViewGroup parent) {
+        Log.e("AbstractAppListAdapter","initSimpleLayout");
         View convertView;
         convertView = inflater
                 .inflate(R.layout.timeline_listview_item_simple_layout, parent, false);
@@ -354,6 +364,7 @@ public abstract class AbstractAppListAdapter<T extends ItemBean> extends BaseAda
     }
 
     private View initMylayout(ViewGroup parent) {
+        Log.e("AbstractAppListAdapter","initMylayout");
         View convertView;
         if (SettingUtility.getEnableBigPic()) {
             convertView = inflater
@@ -365,15 +376,18 @@ public abstract class AbstractAppListAdapter<T extends ItemBean> extends BaseAda
     }
 
     private View initNormalLayout(ViewGroup parent) {
+        Log.e("AbstractAppListAdapter","initNormalLayout");
         return inflater.inflate(R.layout.timeline_listview_item_layout, parent, false);
     }
 
     private View initBigPicLayout(ViewGroup parent) {
+        Log.e("AbstractAppListAdapter","initBigPicLayout");
         return inflater.inflate(R.layout.timeline_listview_item_big_pic_layout, parent, false);
     }
 
     //weibo image widgets and its forward weibo image widgets are the same
     private ViewHolder buildHolder(View convertView) {
+        Log.e("AbstractAppListAdapter","bindOnTouchListener");
         ViewHolder holder = new ViewHolder();
         holder.username = ViewUtility.findViewById(convertView, R.id.username);
         TextPaint tp = holder.username.getPaint();
@@ -407,6 +421,7 @@ public abstract class AbstractAppListAdapter<T extends ItemBean> extends BaseAda
     }
 
     private void configLayerType(ViewHolder holder) {
+        Log.e("AbstractAppListAdapter","configLayerType");
         boolean disableHardAccelerated = SettingUtility.disableHardwareAccelerated();
         if (!disableHardAccelerated) {
             return;
@@ -435,6 +450,7 @@ public abstract class AbstractAppListAdapter<T extends ItemBean> extends BaseAda
     }
 
     private void configViewFont(ViewHolder holder) {
+        Log.e("AbstractAppListAdapter","configViewFont");
         int prefFontSizeSp = SettingUtility.getFontSize();
         float currentWidgetTextSizePx;
 
@@ -509,6 +525,7 @@ public abstract class AbstractAppListAdapter<T extends ItemBean> extends BaseAda
     }
 
     protected void buildAvatar(IWeiciyuanDrawable view, int position, final UserBean user) {
+        Log.e("AbstractAppListAdapter","buildAvatar");
         view.setVisibility(View.VISIBLE);
         view.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -532,6 +549,7 @@ public abstract class AbstractAppListAdapter<T extends ItemBean> extends BaseAda
     }
 
     protected void buildAvatar(ImageView view, int position, final UserBean user) {
+        Log.e("AbstractAppListAdapter","buildAvatar");
         String image_url = user.getProfile_image_url();
         if (!TextUtils.isEmpty(image_url)) {
             view.setVisibility(View.VISIBLE);
@@ -543,6 +561,7 @@ public abstract class AbstractAppListAdapter<T extends ItemBean> extends BaseAda
     }
 
     protected void buildMultiPic(final MessageBean msg, final GridLayout gridLayout) {
+        Log.e("AbstractAppListAdapter","buildMultiPic");
         if (SettingUtility.isEnablePic()) {
             gridLayout.setVisibility(View.VISIBLE);
 
@@ -645,6 +664,7 @@ public abstract class AbstractAppListAdapter<T extends ItemBean> extends BaseAda
     }
 
     protected void interruptPicDownload(GridLayout gridLayout) {
+        Log.e("AbstractAppListAdapter","interruptPicDownload");
         for (int i = 0; i < gridLayout.getChildCount(); i++) {
             ImageView iv = (ImageView) gridLayout.getChildAt(i);
             if (iv != null) {
@@ -663,6 +683,7 @@ public abstract class AbstractAppListAdapter<T extends ItemBean> extends BaseAda
     }
 
     protected void interruptPicDownload(IWeiciyuanDrawable view) {
+        Log.e("AbstractAppListAdapter","interruptPicDownload");
         Drawable drawable = view.getImageView().getDrawable();
         if (drawable instanceof PictureBitmapDrawable) {
             PictureBitmapDrawable downloadedDrawable
@@ -733,6 +754,7 @@ public abstract class AbstractAppListAdapter<T extends ItemBean> extends BaseAda
     }
 
     public void removeItem(final int postion) {
+        Log.e("AbstractAppListAdapter","removeItem");
         if (postion >= 0 && postion < bean.size()) {
             AppLogger.e("1");
             Animation anim = AnimationUtils.loadAnimation(
@@ -796,6 +818,7 @@ public abstract class AbstractAppListAdapter<T extends ItemBean> extends BaseAda
 
     //when view is recycled by listview, need to catch exception
     private ViewHolder getViewHolderByView(View view) {
+        Log.e("AbstractAppListAdapter","getViewHolderByView");
         try {
             final int position = listView.getPositionForView(view);
             if (position == ListView.INVALID_POSITION) {
@@ -809,6 +832,7 @@ public abstract class AbstractAppListAdapter<T extends ItemBean> extends BaseAda
     }
 
     private ViewHolder getViewHolderByView(int position) {
+        Log.e("AbstractAppListAdapter","getViewHolderByView");
         int wantedPosition = position - listView.getHeaderViewsCount();
         int firstPosition = listView.getFirstVisiblePosition() - listView.getHeaderViewsCount();
         int wantedChild = wantedPosition - firstPosition;

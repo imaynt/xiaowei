@@ -4,6 +4,13 @@ import com.example.subscriberandrpublisher.MyTopic;
 import com.example.subscriberandrpublisher.MyTopicSubscriber;
 import com.example.subscriberandrpublisher.observer;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Locale;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 public class MyFirstClass {
     public static void main(String[] args)
     {
@@ -25,7 +32,24 @@ public class MyFirstClass {
 //        topic.unregister(obj1);
         topic.postMessage("news");
         topic1.postMessage("hello");
-
+//        String x = "Wed Jan 13 13:12:54 CST 2016";
+//        SimpleDateFormat sdf1 = new SimpleDateFormat ("EEE MMM dd HH:mm:ss Z yyyy", Locale.US);
+//        try
+//        {
+//            Date date=sdf1.parse(x);
+//            long a = date.getTime();
+//            SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+//            String sDate=sdf.format(date);
+//            System.out.println(sDate+","+date);
+//        }
+//        catch (ParseException e)
+//        {
+//            e.printStackTrace();
+//        }
+        String email = "21233sabc@gamil.com";
+        Pattern p = Pattern.compile("(\\w{3})(\\w+)(\\w{3})(@\\w+)");
+        Matcher m = p.matcher(email);
+        System.out.println(m.replaceAll("$1...$3$4"));
 
     }
 }
