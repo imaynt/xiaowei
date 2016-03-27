@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/appcompat/appcompat.iml" filepath="$PROJECT_DIR$/appcompat/appcompat.iml" />
       <module fileurl="file://$PROJECT_DIR$/autoscrollviewpager/autoscrollviewpager.iml" filepath="$PROJECT_DIR$/autoscrollviewpager/autoscrollviewpager.iml" />
       <module fileurl="file://$PROJECT_DIR$/baidumap/baidumap.iml" filepath="$PROJECT_DIR$/baidumap/baidumap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bengda/bengda.iml" filepath="$PROJECT_DIR$/bengda/bengda.iml" />
       <module fileurl="file://$PROJECT_DIR$/ifenghaizhuan/ifenghaizhuan.iml" filepath="$PROJECT_DIR$/ifenghaizhuan/ifenghaizhuan.iml" />
       <module fileurl="file://$PROJECT_DIR$/javademo/javademo.iml" filepath="$PROJECT_DIR$/javademo/javademo.iml" />
       <module fileurl="file://$PROJECT_DIR$/justwetools/justwetools.iml" filepath="$PROJECT_DIR$/justwetools/justwetools.iml" />
