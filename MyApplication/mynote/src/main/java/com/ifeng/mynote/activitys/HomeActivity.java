@@ -42,6 +42,10 @@ public class HomeActivity extends BaseActivity implements BaseRequest.PostRespon
         startActivity(new Intent(HomeActivity.this, SlideActivity.class));
         BaseRequest.get(request, "http://hbhs.sinaapp.com/getjson1/", this);
 
+
+
+        
+
     }
 
 
