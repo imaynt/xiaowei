@@ -1,1 +1,1 @@
-include ':javademo', ':app', ':autoscrollviewpager', ':ifenghaizhuan', ':justwetools', ':lib', ':mynote', ':note', ':showcaseview', ':slideanddraglistview', ':slidingmenu', ':volley', ':weiciyuan', ':recyclerview', ':appcompat', ':baidumap' ,'bengda'
+include 'bengda', ':app', ':appcompat', ':autoscrollviewpager', ':baidumap', ':ifenghaizhuan', ':javademo', ':justwetools', ':lib', ':mynote', ':note', ':recyclerview', ':showcaseview', ':slideanddraglistview', ':slidingmenu', ':volley', ':weiciyuan'
